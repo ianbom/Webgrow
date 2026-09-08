@@ -4,6 +4,9 @@ import "./globals.css";
 import "./hero-reference.css";
 import "./projects-reference.css";
 import "./projects-reference-responsive.css";
+import "./footer-reference.css";
+import "./footer-reference-responsive.css";
+import "./audit-fixes.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-tight" });

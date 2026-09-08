@@ -129,7 +129,7 @@
   .hero-reference .hero-grid { grid-template-columns: 1fr; gap: 30px; }
   .hero-reference .hero-copy { padding-top: 0; }
   .hero-reference .hero-visual { min-height: 630px; padding-top: 0; place-items: center; }
-  .hero-reference .hero-mockup { width: min(86vw, 800px); }
+  .hero-reference .hero-mockup { width: min(78vw, 700px); }
   .hero-side-label { right: 4%; }
   .hero-reference .hero-orbit { left: 30%; bottom: -810px; }
   .hero-scroll { margin-top: 45px; }

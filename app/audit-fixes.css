@@ -1,0 +1,111 @@
+@media (max-width: 900px) {
+  .hero-navbar .desktop-nav,
+  .hero-navbar .desktop-cta {
+    display: none;
+  }
+
+  .hero-navbar .menu-trigger {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+  }
+
+  .hero-navbar .mobile-sheet {
+    display: block;
+    position: absolute;
+    inset: 92px 0 auto;
+    border-bottom: 1px solid var(--line);
+    background: #f2f5ecf5;
+    backdrop-filter: blur(16px);
+  }
+
+  .hero-navbar .mobile-sheet nav {
+    display: grid;
+    gap: 4px;
+    padding: 20px 0 28px;
+  }
+
+  .hero-navbar .mobile-sheet nav > a {
+    padding: 12px 0;
+    font-family: var(--font-tight);
+    font-size: 28px;
+    letter-spacing: -.03em;
+  }
+
+  .hero-navbar .mobile-sheet .button {
+    width: max-content;
+    margin-top: 12px;
+  }
+}
+
+.navbar-dark {
+  background: #161715e8;
+  border-color: #f2f5ec2e;
+  backdrop-filter: blur(16px);
+}
+
+.navbar-dark .webgrow-brand,
+.navbar-dark .desktop-nav a,
+.navbar-dark .menu-trigger {
+  color: var(--bg);
+}
+
+.navbar-dark .desktop-nav .nav-active,
+.navbar-dark .desktop-nav a:hover {
+  color: #fff;
+}
+
+.navbar-dark .desktop-cta {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--ink);
+}
+
+.navbar-dark .mobile-sheet {
+  border-color: #f2f5ec2e;
+  background: #161715f5;
+  color: var(--bg);
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .hero-navbar .container,
+  .hero-reference .container {
+    width: min(calc(100% - clamp(40px, 8vw, 96px)), var(--container));
+  }
+
+  .positioning-grid,
+  .why-intro,
+  .technology-intro,
+  .faq-grid {
+    gap: 32px;
+  }
+
+  .technology-groups {
+    gap: 34px 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-navbar .mobile-sheet {
+    inset-block-start: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .laptop-screen main > header .dashboard-greeting b {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar,
+  .button,
+  .hero-navbar .mobile-sheet {
+    transition: none;
+  }
+}

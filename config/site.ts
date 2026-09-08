@@ -1,7 +1,7 @@
 export const siteConfig = {
   companyName: "Webgrow",
   tagline: "Website yang bekerja untuk bisnis Anda.",
-  email: "{{EMAIL}}",
+  email: "hello@webgrow.id",
   whatsapp: "{{WHATSAPP_URL}}",
   instagram: "{{INSTAGRAM_URL}}",
   linkedin: "{{LINKEDIN_URL}}",
