@@ -1,0 +1,5 @@
+import { Menu, X } from "lucide-react";
+export function Mark() { return <span className="mark" aria-label="Aceternity">A</span>; }
+export function DotIcon() { return <span className="dot-icon" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /><i /><i /></span>; }
+export function Cta({ children = "Chat with Alex", href = "#contact", light = false }: { children?: React.ReactNode; href?: string; light?: boolean }) { return <a href={href} className={`cta ${light ? "cta-light" : ""}`}><DotIcon />{children}</a>; }
+export function SiteHeader() { return <header className="site-header"><a href="#top"><Mark /></a><nav aria-label="Primary"><a href="#work">Work</a><a href="#services">Products</a><a href="#pricing">Pricing</a><a href="#insights">Blog</a></nav><Cta /><details className="mobile-menu"><summary aria-label="Open navigation"><Menu size={24} /><X size={24} /></summary><nav aria-label="Mobile navigation"><a href="#work">Work</a><a href="#services">Products</a><a href="#pricing">Pricing</a><a href="#insights">Blog</a><Cta /></nav></details></header>; }
