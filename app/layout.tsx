@@ -9,11 +9,32 @@ import "./footer-reference-responsive.css";
 import "./audit-fixes.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-tight" });
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-tight",
+});
 
-export const metadata: Metadata = { title: "Webgrow — Jasa Pembuatan Website & Web Application", description: "Software house yang membantu bisnis membangun website, e-commerce, dan aplikasi web yang modern, cepat, scalable, dan sesuai kebutuhan.", openGraph: { title: "Webgrow", description: "Website dan aplikasi web yang bekerja untuk bisnis Anda." } };
-export const viewport: Viewport = { themeColor: "#F2F5EC", width: "device-width", initialScale: 1 };
+export const metadata: Metadata = {
+  title: "Webgrow — Jasa Pembuatan Website & Web Application",
+  description:
+    "Software house yang membantu bisnis membangun website, e-commerce, dan aplikasi web yang modern, cepat, scalable, dan sesuai kebutuhan.",
+  openGraph: {
+    title: "Webgrow",
+    description: "Website dan aplikasi web yang bekerja untuk bisnis Anda.",
+  },
+};
+export const viewport: Viewport = {
+  themeColor: "#F2F5EC",
+  width: "device-width",
+  initialScale: 1,
+};
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="id" className={`${inter.variable} ${interTight.variable}`}><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="id" className={`${inter.variable} ${interTight.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
 }
