@@ -1,5 +1,6 @@
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { Faq, FinalCta } from "@/components/sections/faq-cta";
 import { Hero } from "@/components/sections/hero";
 import { Positioning } from "@/components/sections/positioning";
@@ -16,19 +17,43 @@ export function HomePage() {
     <>
       <Navbar />
       <main id="top">
-        <Hero />
-        <Positioning />
-        <Services />
-        <Projects />
-        <WhyUs />
-        <Metrics />
-        <Process />
-        <Technologies />
-        <Testimonial />
-        <Faq />
-        <FinalCta />
+        <ScrollReveal immediate variant="hero">
+          <Hero />
+        </ScrollReveal>
+        <ScrollReveal variant="fade-up">
+          <Positioning />
+        </ScrollReveal>
+        <ScrollReveal variant="slide-left">
+          <Services />
+        </ScrollReveal>
+        <ScrollReveal variant="scale">
+          <Projects />
+        </ScrollReveal>
+        <ScrollReveal variant="slide-right">
+          <WhyUs />
+        </ScrollReveal>
+        <ScrollReveal variant="scale">
+          <Metrics />
+        </ScrollReveal>
+        <ScrollReveal variant="clip">
+          <Process />
+        </ScrollReveal>
+        <ScrollReveal variant="slide-left">
+          <Technologies />
+        </ScrollReveal>
+        <ScrollReveal variant="blur">
+          <Testimonial />
+        </ScrollReveal>
+        <ScrollReveal variant="slide-right">
+          <Faq />
+        </ScrollReveal>
+        <ScrollReveal variant="scale">
+          <FinalCta />
+        </ScrollReveal>
       </main>
-      <Footer />
+      <ScrollReveal variant="fade-up">
+        <Footer />
+      </ScrollReveal>
     </>
   );
 }
