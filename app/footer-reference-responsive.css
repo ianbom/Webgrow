@@ -32,7 +32,7 @@
   .footer-reference .footer-bottom { grid-template-columns:1fr; gap:18px; padding:23px 0; font-size:12px; }
   .footer-bottom small,.footer-bottom>div { grid-column:auto; grid-row:auto; justify-self:start; }
   .footer-bottom>div { gap:20px; }
-  .footer-giant-word { margin:0 -5% -2%; font-size:30vw; line-height:.75; }
+  .footer-giant-word { margin:0 -5% 0; font-size:30vw; line-height:.8; }
 }
 
 @media (prefers-reduced-motion:reduce) { .footer-cta .button,.footer-cta-actions a,.footer-reference a { transition:none; } }
